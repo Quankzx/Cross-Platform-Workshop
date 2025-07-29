@@ -1,72 +1,117 @@
-Workshop Project 04 - Installation and Usage Guide
-Prerequisites
-Before getting started, make sure you have the following software installed on your machine:
+# Workshop Project 04 - Installation and Usage Guide
 
-Java Development Kit (JDK) for Java Spring Boot.
-Node.js and npm for Next.js.
-Flutter SDK for mobile development.
-An Integrated Development Environment (IDE) for Java and JavaScript/TypeScript.
-Backend (Java Spring Boot)
-Step 1: Clone the Repository
-bash
-Copy code
+## Prerequisites
+
+Trước khi bắt đầu, đảm bảo rằng bạn đã cài đặt đầy đủ các phần mềm sau:
+
+- **Java Development Kit (JDK)**: Dành cho Java Spring Boot.
+- **Node.js và npm**: Dành cho dự án Next.js.
+- **Flutter SDK**: Dành cho phát triển ứng dụng mobile.
+- **IDE phù hợp**: Nên dùng VS Code, IntelliJ, Android Studio, v.v.
+
+---
+
+## 🚀 Backend (Java Spring Boot)
+
+### Step 1: Clone Repository
+
+```bash
 git clone <repository-url>
 cd <project-folder>
-Step 2: Configure Email
-Update the application.properties file in the backend project with the provided workshop email credentials:
+```
 
-properties
-Copy code
-spring.mail.username=workshopproject04@gmail.com
+### Step 2: Cấu hình Email
+
+Cập nhật `application.properties` với thông tin email được cung cấp:
+
+```properties
+spring.mail.username=workshopproject04@gmail.com  
 spring.mail.password=iebqtqjsfqzskuyf
-Step 3: Run the Backend
-bash
-Copy code
+```
+
+### Step 3: Chạy Backend
+
+```bash
 ./mvnw spring-boot:run
-The backend should now be running at http://localhost:8080.
+```
 
-Frontend (Next.js)
-Step 4: Navigate to Frontend Folder
-bash
-Copy code
+Backend sẽ chạy tại: [http://localhost:8080](http://localhost:8080)
+
+---
+
+## 💻 Frontend (Next.js)
+
+### Step 4: Di chuyển vào thư mục frontend
+
+```bash
 cd frontend
-Step 5: Install Dependencies
-bash
-Copy code
+```
+
+### Step 5: Cài đặt dependencies
+
+```bash
 npm install
-Step 6: Configure API Endpoint
-Update the NEXT_PUBLIC_API_URL in the .env.local file with the backend API URL:
+```
 
-env
-Copy code
+### Step 6: Cấu hình API endpoint
+
+Tạo hoặc cập nhật file `.env.local`:
+
+```env
 NEXT_PUBLIC_API_URL=http://localhost:8080/api
-Step 7: Run the Frontend
-bash
-Copy code
+```
+
+### Step 7: Chạy Frontend
+
+```bash
 npm run dev
-The Next.js frontend should now be accessible at http://localhost:3000.
+```
 
-Mobile (Flutter)
-Step 8: Navigate to Mobile Folder
-bash
-Copy code
+Frontend sẽ chạy tại: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📱 Mobile (Flutter)
+
+### Step 8: Di chuyển vào thư mục mobile
+
+```bash
 cd mobile
-Step 9: Run the App
-bash
-Copy code
+```
+
+### Step 9: Chạy ứng dụng Flutter
+
+```bash
 flutter run
-Ensure an emulator or physical device is connected. The Flutter app should launch on the device.
+```
 
-Testing Payment Accounts
-Use the provided test accounts for payment testing.
+> Lưu ý: Cần kết nối thiết bị thật hoặc mở emulator trước khi chạy.
 
-Customer Accounts
-Email: userAccountPoor@gmail.com / userAccountRich@gmail.com
-Password: Matkhau1
-Store Account
-Email: workshopproject04@gmail.com
-Password: Matkhau1
-Visit PayPal Sandbox Activity to view payment results.
+---
 
-Conclusion
-The Workshop Project 04 is now set up with the backend, frontend, and mobile components ready to use. Refer to the specific sections for any troubleshooting or additional information. Happy coding!
+## 💳 Testing Payment Accounts
+
+### Tài khoản khách hàng:
+
+- `userAccountPoor@gmail.com`
+- `userAccountRich@gmail.com`
+- Mật khẩu: `Matkhau1`
+
+### Tài khoản cửa hàng:
+
+- Email: `workshopproject04@gmail.com`
+- Mật khẩu: `Matkhau1`
+
+Truy cập [PayPal Sandbox Activity](https://sandbox.paypal.com) để kiểm tra giao dịch.
+
+---
+
+## ✅ Kết luận
+
+Workshop Project 04 đã được cấu hình đầy đủ với 3 phần:
+
+- Backend: Java Spring Boot
+- Frontend: Next.js
+- Mobile: Flutter
+
+Tham khảo từng mục hướng dẫn để vận hành hoặc xử lý lỗi. Chúc bạn code vui!
