@@ -25,8 +25,8 @@ cd <project-folder>
 Cập nhật `application.properties` với thông tin email được cung cấp:
 
 ```properties
-spring.mail.username=workshopproject04@gmail.com  
-spring.mail.password=iebqtqjsfqzskuyf
+spring.mail.username=""
+spring.mail.password=""
 ```
 
 ### Step 3: Chạy Backend
@@ -106,7 +106,7 @@ Truy cập [PayPal Sandbox Activity](https://sandbox.paypal.com) để kiểm tr
 
 ---
 
-## ✅ Kết luận
+## 
 
 Workshop Project 04 đã được cấu hình đầy đủ với 3 phần:
 
